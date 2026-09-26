@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-       <loc>https://atpgamestudio.com.ng/</loc>
-       <lastmod>2026-09-26T04:19:24+00:00</lastmod>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://atpgamestudio.com.ng/about</loc>
-       <lastmod>2026-09-26T04:19:24+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://atpgamestudio.com.ng/projects</loc>
-       <lastmod>2026-09-26T04:19:24+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://atpgamestudio.com.ng/contact</loc>
-       <lastmod>2026-09-26T04:19:24+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://atpgamestudio.com.ng/privacy-policy</loc>
-       <lastmod>2026-09-26T04:19:24+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://atpgamestudio.com.ng/terms-and-conditions</loc>
-       <lastmod>2026-09-26T04:19:24+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
+    <url>
+        <loc>https://atpgamestudio.com.ng/</loc>
+        <lastmod>2026-09-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://atpgamestudio.com.ng/about.html</loc>
+        <lastmod>2026-09-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://atpgamestudio.com.ng/projects.html</loc>
+        <lastmod>2026-09-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://atpgamestudio.com.ng/contact.html</loc>
+        <lastmod>2026-09-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://atpgamestudio.com.ng/privacy-policy.html</loc>
+        <lastmod>2026-09-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://atpgamestudio.com.ng/terms-and-conditions.html</loc>
+        <lastmod>2026-09-26</lastmod>
+    </url>
+
 </urlset>

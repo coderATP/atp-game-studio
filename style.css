@@ -808,3 +808,17 @@ right:16px;
 }
 
 }
+
+.contact-item a,
+.contact-item span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item i {
+    width: 20px;
+    text-align: center;
+    font-size: 1rem;
+    flex-shrink: 0;
+}

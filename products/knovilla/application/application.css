@@ -1,0 +1,313 @@
+/* =========================
+   KNOVILLA INFORMATION PAGES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #09103f;
+    color: #e8eef5;
+    font-family: "Poppins", Arial, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.info-page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 50px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.info-header {
+    text-align: center;
+    padding: 25px 10px 35px;
+}
+
+.info-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.info-header h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.info-header p {
+    margin: 8px 0 0;
+    color: #9fb3c8;
+    font-size: 15px;
+}
+
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+.info-section {
+    margin-bottom: 24px;
+    padding: 28px;
+
+    background: #0a2a43;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+.info-section h2 {
+    margin: 0 0 14px;
+
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.info-section h3 {
+    margin: 0 0 8px;
+
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.info-section p {
+    margin: 0 0 14px;
+
+    color: #d0dbe6;
+    font-size: 15px;
+}
+
+.info-section p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   INFORMATION CARDS
+========================= */
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+
+    margin-top: 20px;
+}
+
+.info-card {
+    padding: 20px;
+
+    background: #123d5c;
+    border-radius: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.info-card p {
+    font-size: 14px;
+}
+
+
+/* =========================
+   LISTS
+========================= */
+
+.info-list {
+    margin: 12px 0 0;
+    padding-left: 22px;
+
+    color: #d0dbe6;
+}
+
+.info-list li {
+    margin-bottom: 6px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.info-contact {
+    text-align: center;
+}
+
+.info-email {
+    display: inline-block;
+
+    color: #60a5fa;
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.info-email:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.info-footer {
+    padding: 25px 10px 10px;
+
+    text-align: center;
+}
+
+.info-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px 14px;
+
+    margin-bottom: 14px;
+}
+
+.info-nav a {
+    color: #9fb3c8;
+    font-size: 13px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.info-nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.info-footer p {
+    margin: 0 0 10px;
+
+    color: #71869a;
+    font-size: 12px;
+}
+
+.info-back {
+    color: #60a5fa;
+    font-size: 13px;
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.info-back:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .info-page {
+        padding: 20px 14px 35px;
+    }
+
+    .info-header {
+        padding: 20px 8px 28px;
+    }
+
+    .info-logo {
+        font-size: 28px;
+    }
+
+    .info-header h1 {
+        font-size: 27px;
+    }
+
+    .info-header p {
+        font-size: 14px;
+    }
+
+    .info-section {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .info-section h2 {
+        font-size: 20px;
+    }
+
+    .info-section p {
+        font-size: 14px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 18px;
+    }
+
+    .info-nav {
+        gap: 7px 12px;
+    }
+
+    .info-nav a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   LARGE SCREENS
+========================= */
+
+@media (min-width: 1000px) {
+
+    .info-page {
+        padding-top: 45px;
+    }
+
+    .info-section {
+        padding: 32px;
+    }
+}

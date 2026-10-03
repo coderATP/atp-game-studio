@@ -66,3 +66,24 @@ event.preventDefault();
 });
 
 }
+
+//FAQs
+const faqQuestions = document.querySelectorAll(".faq-question");
+
+faqQuestions.forEach((question) => {
+
+    question.addEventListener("click", () => {
+
+        const faqItem = question.closest(".faq-item");
+        const isOpen = faqItem.classList.contains("open");
+
+        faqItem.classList.toggle("open", !isOpen);
+
+        question.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+
+    });
+
+}); 

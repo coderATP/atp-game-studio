@@ -1,34 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- ATP Game Studio -->
     <url>
         <loc>https://atpgamestudio.com.ng/</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
 
     <url>
         <loc>https://atpgamestudio.com.ng/about.html</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
 
     <url>
         <loc>https://atpgamestudio.com.ng/projects.html</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
 
     <url>
         <loc>https://atpgamestudio.com.ng/contact.html</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
 
     <url>
         <loc>https://atpgamestudio.com.ng/privacy-policy.html</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-03</lastmod>
     </url>
 
     <url>
         <loc>https://atpgamestudio.com.ng/terms-and-conditions.html</loc>
-        <lastmod>2026-09-26</lastmod>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+
+    <!-- Products -->
+    <url>
+        <loc>https://solitaire.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://chain-rxn.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://suits-up.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://tick-task.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://hands-of-time.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://image-resizer.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://tfx.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://knovilla.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://scientific-calculator.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://stopwatch.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://ping-pong.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
+    </url>
+
+    <url>
+        <loc>https://vidlite.atpgamestudio.com.ng/</loc>
+        <lastmod>2026-10-03</lastmod>
     </url>
 
 </urlset>

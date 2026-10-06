@@ -4,6 +4,9 @@ const menuToggle =
 const mainNav =
   document.getElementById("mainNav");
 
+const currentYear =
+  document.getElementById("currentYear");
+
 if (menuToggle && mainNav) {
   
   menuToggle.addEventListener(
@@ -57,5 +60,12 @@ if (menuToggle && mainNav) {
       );
       
     });
+  
+}
+
+if (currentYear) {
+  
+  currentYear.textContent =
+    new Date().getFullYear();
   
 }

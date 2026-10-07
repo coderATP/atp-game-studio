@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#07110d"
+    >
+
+    <meta
+        name="description"
+        content="ChainRxn is a turn-based multiplayer card strategy game by ATP Game Studio. Build chains, outplay your opponents and be the first to empty your hand."
+    >
+
+    <meta
+        name="keywords"
+        content="ChainRxn, ChainRxn card game, multiplayer card game, strategy card game, ATP Game Studio"
+    >
+
+    <meta
+        name="author"
+        content="ATP Game Studio"
+    >
+
+    <meta
+        property="og:title"
+        content="ChainRxn — Build the Chain. Take the Win."
+    >
+
+    <meta
+        property="og:description"
+        content="A turn-based multiplayer card strategy game where every move can extend the chain."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+    <title>ChainRxn — Build the Chain. Take the Win.</title>
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="crx-page">
+
+        <!-- =========================================
+             NAVIGATION
+        ========================================== -->
+
+        <header class="crx-nav">
+
+            <a
+                href="#"
+                class="crx-brand"
+                aria-label="ChainRxn home"
+            >
+                <span class="crx-brand-mark">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+                <span class="crx-brand-name">
+                    Chain<span>Rxn</span>
+                </span>
+            </a>
+
+            <nav class="crx-nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#features">Features</a>
+                <a href="#modes">Modes</a>
+                <a href="#scoring">Scoring</a>
+            </nav>
+
+            <a
+                href="#play"
+                class="crx-nav-button"
+            >
+                Play Now
+            </a>
+
+            <button
+                class="crx-menu-button"
+                id="crxMenuButton"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </header>
+
+
+        <main>
+
+            <!-- =========================================
+                 HERO
+            ========================================== -->
+
+            <section class="crx-hero">
+
+                <div class="crx-hero-background">
+                    <div class="crx-grid"></div>
+                    <div class="crx-glow crx-glow-one"></div>
+                    <div class="crx-glow crx-glow-two"></div>
+                </div>
+
+                <div class="crx-hero-content">
+
+                    <div class="crx-eyebrow">
+                        <span class="crx-live-dot"></span>
+                        TURN-BASED MULTIPLAYER CARD GAME
+                    </div>
+
+                    <h1>
+                        Build the
+                        <span>Chain.</span>
+                        Take the Win.
+                    </h1>
+
+                    <p class="crx-hero-description">
+                        Think ahead. Play your cards. Extend the chain.
+                        ChainRxn is a strategic card game where every
+                        move can change the entire table.
+                    </p>
+
+                    <div class="crx-hero-actions">
+
+                        <a
+                            href="https://chain-rxn.atpgamestudio.com.ng"
+                            class="crx-primary-button"
+                        >
+                            <span>Play ChainRxn</span>
+                            <span class="crx-button-arrow">→</span>
+                        </a>
+
+                        <a
+                            href="#how-it-works"
+                            class="crx-secondary-button"
+                        >
+                            How It Works
+                        </a>
+
+                    </div>
+
+                    <div class="crx-hero-stats">
+
+                        <div>
+                            <strong>2–4</strong>
+                            <span>Players</span>
+                        </div>
+
+                        <div>
+                            <strong>5</strong>
+                            <span>Starting Cards</span>
+                        </div>
+
+                        <div>
+                            <strong>15</strong>
+                            <span>Max Chain Score</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO GAME TABLE -->
+
+                <div class="crx-hero-game">
+
+                    <div class="crx-table-light"></div>
+
+                    <div class="crx-table">
+
+                        <div class="crx-table-top">
+
+                            <div class="crx-market-label">
+                                MARKET
+                            </div>
+
+                            <div class="crx-market-stack">
+                                <div class="crx-mini-card"></div>
+                                <div class="crx-mini-card"></div>
+                                <div class="crx-mini-card"></div>
+                            </div>
+
+                            <div class="crx-scoreboard">
+
+                                <span>ROUND</span>
+                                <strong>04</strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="crx-chain-area">
+
+                            <div class="crx-chain-line"></div>
+
+                            <div class="crx-chain-card crx-card-left">
+                                <span>8</span>
+                                <small>♠</small>
+                            </div>
+
+                            <div class="crx-chain-card crx-card-mid">
+                                <span>7</span>
+                                <small>♥</small>
+                            </div>
+
+                            <div class="crx-chain-card crx-card-center">
+                                <span>6</span>
+                                <small>♣</small>
+                            </div>
+
+                            <div class="crx-chain-card crx-card-right">
+                                <span>5</span>
+                                <small>♦</small>
+                            </div>
+
+                            <div class="crx-chain-card crx-card-end">
+                                <span>6</span>
+                                <small>♠</small>
+                            </div>
+
+                            <div class="crx-foundation-label">
+                                FOUNDATION
+                            </div>
+
+                        </div>
+
+
+                        <div class="crx-player-hand">
+
+                            <div class="crx-hand-card crx-red">
+                                <span>2</span>
+                                <small>♥</small>
+                            </div>
+
+                            <div class="crx-hand-card">
+                                <span>4</span>
+                                <small>♣</small>
+                            </div>
+
+                            <div class="crx-hand-card crx-active-card">
+                                <span>5</span>
+                                <small>♠</small>
+                            </div>
+
+                            <div class="crx-hand-card crx-red">
+                                <span>9</span>
+                                <small>♦</small>
+                            </div>
+
+                            <div class="crx-hand-card">
+                                <span>K</span>
+                                <small>♣</small>
+                            </div>
+
+                        </div>
+
+                        <div class="crx-turn-indicator">
+                            YOUR TURN
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 INTRO
+            ========================================== -->
+
+            <section class="crx-intro">
+
+                <div class="crx-section-label">
+                    THE GAME
+                </div>
+
+                <h2>
+                    One card starts it.
+                    <span>The chain takes over.</span>
+                </h2>
+
+                <p>
+                    ChainRxn is a turn-based multiplayer card strategy
+                    game built around one simple idea: play a card that
+                    connects to the Foundation and keep the chain moving.
+                </p>
+
+            </section>
+
+
+            <!-- =========================================
+                 HOW IT WORKS
+            ========================================== -->
+
+            <section
+                class="crx-how"
+                id="how-it-works"
+            >
+
+                <div class="crx-section-heading">
+
+                    <div>
+                        <span class="crx-section-label">
+                            HOW IT WORKS
+                        </span>
+
+                        <h2>
+                            Every move
+                            <span>matters.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        The rules are simple. The decisions are not.
+                        Manage your hand, watch the Foundation and
+                        choose when to push your advantage.
+                    </p>
+
+                </div>
+
+
+                <div class="crx-rule-grid">
+
+                    <article class="crx-rule-card">
+
+                        <div class="crx-rule-number">
+                            01
+                        </div>
+
+                        <div class="crx-rule-visual">
+                            <div class="crx-rule-card-shape">
+                                <span>6</span>
+                                <small>♠</small>
+                            </div>
+
+                            <span class="crx-rule-arrow">→</span>
+
+                            <div class="crx-rule-card-shape crx-red">
+                                <span>5</span>
+                                <small>♥</small>
+                            </div>
+                        </div>
+
+                        <h3>
+                            Follow the value
+                        </h3>
+
+                        <p>
+                            A card is valid when its value is exactly
+                            one higher or one lower than the top card
+                            on the Foundation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-rule-card">
+
+                        <div class="crx-rule-number">
+                            02
+                        </div>
+
+                        <div class="crx-rule-visual crx-action-visual">
+                            <span>SWAP</span>
+                            <span>DEAL</span>
+                            <span>END</span>
+                        </div>
+
+                        <h3>
+                            Choose your action
+                        </h3>
+
+                        <p>
+                            Deal a valid card, swap an unwanted card
+                            with the Market, or end your turn when
+                            the moment is right.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-rule-card">
+
+                        <div class="crx-rule-number">
+                            03
+                        </div>
+
+                        <div class="crx-rule-visual">
+
+                            <div class="crx-score-demo">
+                                <span>1</span>
+                                <i>→</i>
+                                <span>3</span>
+                                <i>→</i>
+                                <span>6</span>
+                            </div>
+
+                        </div>
+
+                        <h3>
+                            Build your score
+                        </h3>
+
+                        <p>
+                            Consecutive valid plays create recursive
+                            scoring. The longer your run, the more
+                            points you collect.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 INTERACTIVE CHAIN
+            ========================================== -->
+
+            <section class="crx-chain-section">
+
+                <div class="crx-chain-copy">
+
+                    <span class="crx-section-label">
+                        THE CORE MECHANIC
+                    </span>
+
+                    <h2>
+                        Keep the
+                        <span>chain alive.</span>
+                    </h2>
+
+                    <p>
+                        The Foundation determines your next opportunity.
+                        Look at the top card, check your hand and decide
+                        whether you can continue the sequence.
+                    </p>
+
+                    <div class="crx-chain-example">
+
+                        <span>6</span>
+                        <b>→</b>
+                        <span>5</span>
+                        <b>→</b>
+                        <span>4</span>
+                        <b>→</b>
+                        <span>5</span>
+                        <b>→</b>
+                        <span>6</span>
+
+                    </div>
+
+                    <p class="crx-chain-note">
+                        A = 1 &nbsp;•&nbsp; J = 11 &nbsp;•&nbsp;
+                        Q = 12 &nbsp;•&nbsp; K = 13
+                    </p>
+
+                </div>
+
+
+                <div class="crx-chain-demo">
+
+                    <div class="crx-demo-header">
+                        <span>LIVE CHAIN</span>
+                        <span id="crxDemoScore">+6 POINTS</span>
+                    </div>
+
+                    <div
+                        class="crx-demo-cards"
+                        id="crxDemoCards"
+                    >
+
+                        <div class="crx-demo-card">
+                            <span>8</span>
+                            <small>♣</small>
+                        </div>
+
+                        <div class="crx-demo-card crx-demo-red">
+                            <span>7</span>
+                            <small>♥</small>
+                        </div>
+
+                        <div class="crx-demo-card">
+                            <span>6</span>
+                            <small>♠</small>
+                        </div>
+
+                    </div>
+
+                    <button
+                        class="crx-demo-button"
+                        id="crxDemoButton"
+                        type="button"
+                    >
+                        DEAL NEXT CARD
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 FEATURES
+            ========================================== -->
+
+            <section
+                class="crx-features"
+                id="features"
+            >
+
+                <div class="crx-section-heading">
+
+                    <div>
+                        <span class="crx-section-label">
+                            PLAY YOUR WAY
+                        </span>
+
+                        <h2>
+                            Simple controls.
+                            <span>Deep decisions.</span>
+                        </h2>
+                    </div>
+
+                </div>
+
+
+                <div class="crx-feature-grid">
+
+                    <article class="crx-feature">
+
+                        <div class="crx-feature-icon">
+                            ↔
+                        </div>
+
+                        <h3>Swap</h3>
+
+                        <p>
+                            Trade an undesirable card with the Market.
+                            You get one swap per turn, so use it wisely.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-feature">
+
+                        <div class="crx-feature-icon">
+                            +
+                        </div>
+
+                        <h3>Deal</h3>
+
+                        <p>
+                            Play a valid card onto the Foundation and
+                            extend your chain.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-feature">
+
+                        <div class="crx-feature-icon">
+                            ↶
+                        </div>
+
+                        <h3>Undo</h3>
+
+                        <p>
+                            Reverse your latest action when you need
+                            to reconsider your move.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-feature">
+
+                        <div class="crx-feature-icon">
+                            ↷
+                        </div>
+
+                        <h3>Redo</h3>
+
+                        <p>
+                            Restore a previously undone action when
+                            you haven't made a new move.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-feature">
+
+                        <div class="crx-feature-icon">
+                            II
+                        </div>
+
+                        <h3>Pause</h3>
+
+                        <p>
+                            Step away from the table and return when
+                            you're ready to continue.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-feature">
+
+                        <div class="crx-feature-icon">
+                            ◷
+                        </div>
+
+                        <h3>Timer</h3>
+
+                        <p>
+                            Keep track of your game and challenge
+                            yourself to make every turn count.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 SCORING
+            ========================================== -->
+
+            <section
+                class="crx-scoring"
+                id="scoring"
+            >
+
+                <div class="crx-scoring-copy">
+
+                    <span class="crx-section-label">
+                        SCORE BIGGER
+                    </span>
+
+                    <h2>
+                        Chain your plays.
+                        <span>Multiply your score.</span>
+                    </h2>
+
+                    <p>
+                        Scoring rewards momentum. Each valid hand dealt
+                        adds another layer to your score for the turn.
+                    </p>
+
+                    <p>
+                        The more cards you successfully connect,
+                        the more valuable the turn becomes.
+                    </p>
+
+                </div>
+
+
+                <div class="crx-score-board">
+
+                    <div class="crx-score-row">
+                        <span>1 valid play</span>
+                        <strong>1</strong>
+                    </div>
+
+                    <div class="crx-score-row">
+                        <span>2 valid plays</span>
+                        <strong>3</strong>
+                    </div>
+
+                    <div class="crx-score-row">
+                        <span>3 valid plays</span>
+                        <strong>6</strong>
+                    </div>
+
+                    <div class="crx-score-row">
+                        <span>4 valid plays</span>
+                        <strong>10</strong>
+                    </div>
+
+                    <div class="crx-score-row crx-score-highlight">
+                        <span>5 valid plays</span>
+                        <strong>15</strong>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 MODES
+            ========================================== -->
+
+            <section
+                class="crx-modes"
+                id="modes"
+            >
+
+                <div class="crx-section-heading">
+
+                    <div>
+                        <span class="crx-section-label">
+                            GAME MODES
+                        </span>
+
+                        <h2>
+                            Pick your
+                            <span>challenge.</span>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Whether you want a traditional match or a
+                        pressure-filled race, ChainRxn gives you
+                        different ways to play.
+                    </p>
+
+                </div>
+
+
+                <div class="crx-mode-grid">
+
+                    <article class="crx-mode-card crx-mode-classic">
+
+                        <div class="crx-mode-top">
+                            <span>01</span>
+                            <span>CLASSIC</span>
+                        </div>
+
+                        <div class="crx-mode-symbol">
+                            ♠
+                        </div>
+
+                        <h3>
+                            Classic
+                        </h3>
+
+                        <p>
+                            Focus entirely on your cards, your
+                            opponents and the chain.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-mode-card crx-mode-time">
+
+                        <div class="crx-mode-top">
+                            <span>02</span>
+                            <span>TIME</span>
+                        </div>
+
+                        <div class="crx-mode-symbol">
+                            ◷
+                        </div>
+
+                        <h3>
+                            Race Against Time
+                        </h3>
+
+                        <p>
+                            Bring the pressure of the clock into
+                            every decision.
+                        </p>
+
+                    </article>
+
+
+                    <article class="crx-mode-card crx-mode-score">
+
+                        <div class="crx-mode-top">
+                            <span>03</span>
+                            <span>SCORE</span>
+                        </div>
+
+                        <div class="crx-mode-symbol">
+                            +
+                        </div>
+
+                        <h3>
+                            First To 70
+                        </h3>
+
+                        <p>
+                            Keep collecting points until someone
+                            reaches the target.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 MULTIPLAYER
+            ========================================== -->
+
+            <section class="crx-multiplayer">
+
+                <div class="crx-multiplayer-table">
+
+                    <div class="crx-player crx-player-top">
+                        <span class="crx-player-avatar">P2</span>
+                        <span>PLAYER 2</span>
+                    </div>
+
+                    <div class="crx-player crx-player-left">
+                        <span class="crx-player-avatar">P3</span>
+                        <span>PLAYER 3</span>
+                    </div>
+
+                    <div class="crx-player crx-player-right">
+                        <span class="crx-player-avatar">P4</span>
+                        <span>PLAYER 4</span>
+                    </div>
+
+                    <div class="crx-table-center">
+
+                        <div class="crx-center-card">
+                            <span>7</span>
+                            <small>♥</small>
+                        </div>
+
+                        <div class="crx-center-ring"></div>
+
+                    </div>
+
+                    <div class="crx-player crx-player-bottom">
+                        <span class="crx-player-avatar crx-you">YOU</span>
+                        <span>YOUR TURN</span>
+                    </div>
+
+                </div>
+
+
+                <div class="crx-multiplayer-copy">
+
+                    <span class="crx-section-label">
+                        MULTIPLAYER
+                    </span>
+
+                    <h2>
+                        The table is
+                        <span>never predictable.</span>
+                    </h2>
+
+                    <p>
+                        Play with up to four participants. Turns move
+                        around the table, and every player is looking
+                        for the same opportunity: empty their hand
+                        before everyone else.
+                    </p>
+
+                    <div class="crx-player-count">
+
+                        <div>
+                            <strong>2</strong>
+                            <span>Players</span>
+                        </div>
+
+                        <div>
+                            <strong>3</strong>
+                            <span>Players</span>
+                        </div>
+
+                        <div>
+                            <strong>4</strong>
+                            <span>Players</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 WIN CONDITION
+            ========================================== -->
+
+            <section class="crx-win">
+
+                <div class="crx-win-card">
+
+                    <div class="crx-win-decoration">
+                        <span>Q</span>
+                        <span>J</span>
+                        <span>K</span>
+                    </div>
+
+                    <span class="crx-section-label">
+                        THE ULTIMATE GOAL
+                    </span>
+
+                    <h2>
+                        Empty your hand.
+                        <span>Win the table.</span>
+                    </h2>
+
+                    <p>
+                        A participant is declared the winner when all
+                        of their cards have been dealt.
+                    </p>
+
+                    <div class="crx-win-chain">
+                        <span>PLAY</span>
+                        <b>→</b>
+                        <span>CHAIN</span>
+                        <b>→</b>
+                        <span>SCORE</span>
+                        <b>→</b>
+                        <span>WIN</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =========================================
+                 FINAL CTA
+            ========================================== -->
+
+            <section
+                class="crx-cta"
+                id="play"
+            >
+
+                <div class="crx-cta-background">
+                    <div class="crx-cta-card crx-cta-card-one">
+                        7
+                    </div>
+
+                    <div class="crx-cta-card crx-cta-card-two">
+                        6
+                    </div>
+
+                    <div class="crx-cta-card crx-cta-card-three">
+                        5
+                    </div>
+                </div>
+
+                <div class="crx-cta-content">
+
+                    <span class="crx-section-label">
+                        YOUR TURN
+                    </span>
+
+                    <h2>
+                        Ready to start
+                        <span>the chain?</span>
+                    </h2>
+
+                    <p>
+                        Step up to the table, make your move and see
+                        how far you can take the chain.
+                    </p>
+
+                    <a
+                        href="https://chain-rxn.atpgamestudio.com.ng"
+                        class="crx-primary-button crx-cta-button"
+                    >
+                        <span>Play ChainRxn</span>
+                        <span class="crx-button-arrow">→</span>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- =========================================
+             FOOTER
+        ========================================== -->
+
+        <footer class="crx-footer">
+
+            <div class="crx-footer-brand">
+
+                <div class="crx-brand">
+                    <span class="crx-brand-mark">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+
+                    <span class="crx-brand-name">
+                        Chain<span>Rxn</span>
+                    </span>
+                </div>
+
+                <p>
+                    A card strategy game by
+                    <strong>ATP Game Studio</strong>.
+                </p>
+
+            </div>
+
+
+            <div class="crx-footer-links">
+
+                <div>
+                    <span>GAME</span>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#features">Features</a>
+                    <a href="#modes">Game Modes</a>
+                </div>
+
+                <div>
+                    <span>ATP GAME STUDIO</span>
+                    <a href="#">Studio</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+
+            </div>
+
+            <div class="crx-footer-bottom">
+
+                <span>
+                    © <span id="crxYear"></span> ATP Game Studio
+                </span>
+
+                <span>
+                    ChainRxn
+                </span>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

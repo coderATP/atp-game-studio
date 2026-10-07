@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stopwatch | ATP Game Studio</title>
+    <meta
+        name="description"
+        content="A simple browser stopwatch with milliseconds, start, stop, reset and an animated analog display."
+    >
+
+    <link
+        rel="canonical"
+        href="https://atpgamestudio.com.ng/products/stopwatch"
+    >
+
+    <meta property="og:title" content="Stopwatch | ATP Game Studio">
+    <meta
+        property="og:description"
+        content="A simple browser stopwatch with millisecond precision and an animated analog display."
+    >
+    <meta
+        property="og:url"
+        content="https://atpgamestudio.com.ng/products/stopwatch"
+    >
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Stopwatch",
+        "url": "https://atpgamestudio.com.ng/products/stopwatch",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web Browser",
+        "publisher": {
+            "@type": "Organization",
+            "@id": "https://atpgamestudio.com.ng/#organization",
+            "name": "ATP Game Studio"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a class="brand" href="../../index.html">
+            ATP<span>/</span>STOPWATCH
+        </a>
+
+        <a class="header-link" href="../../projects.html">
+            Projects
+        </a>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-copy reveal">
+                <p class="eyebrow">ATP GAME STUDIO / TIME</p>
+
+                <h1>
+                    TIME
+                    <span>IN MOTION.</span>
+                </h1>
+
+                <p class="hero-text">
+                    A clean browser stopwatch with millisecond timing,
+                    simple controls and a live analog display.
+                </p>
+
+                <div class="hero-actions">
+                    <a
+                        class="primary-button"
+                        href="https://stopwatch.atpgamestudio.com.ng"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        START STOPWATCH
+                    </a>
+
+                    <a class="text-link" href="#features">
+                        Explore ↓
+                    </a>
+                </div>
+            </div>
+
+            <div class="watch reveal">
+
+                <div class="watch-face">
+                    <div class="ticks"></div>
+
+                    <div class="numbers">
+    <span class="number-top">0</span>
+    <span class="number-right">15</span>
+    <span class="number-bottom">30</span>
+    <span class="number-left">45</span>
+</div>
+
+                    <div class="hand hand-minute"></div>
+                    <div class="hand hand-second"></div>
+                    <div class="hand hand-millisecond"></div>
+                    <div class="center-dot"></div>
+                </div>
+
+                <div class="digital">
+                    <span>00</span>
+                    <b>:</b>
+                    <span>00</span>
+                    <b>:</b>
+                    <span>00</span>
+                    <small>.00</small>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="features" id="features">
+
+            <div class="section-heading reveal">
+                <p class="eyebrow">THE ESSENTIALS</p>
+                <h2>KEEP TRACK.</h2>
+            </div>
+
+            <div class="feature-grid">
+
+                <article class="feature-card reveal">
+                    <span>01</span>
+                    <h3>Millisecond Timing</h3>
+                    <p>
+                        Track elapsed time down to hundredths of a second.
+                    </p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span>02</span>
+                    <h3>Start / Stop</h3>
+                    <p>
+                        Start timing instantly and stop whenever you need.
+                    </p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span>03</span>
+                    <h3>Quick Reset</h3>
+                    <p>
+                        Reset the stopwatch and begin a fresh measurement.
+                    </p>
+                </article>
+
+                <article class="feature-card reveal">
+                    <span>04</span>
+                    <h3>Analog Display</h3>
+                    <p>
+                        Watch the animated hands move around a live clock face.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="time-strip reveal">
+            <div class="time-value">00:00:00<span>.00</span></div>
+            <p>START. STOP. RESET. REPEAT.</p>
+        </section>
+
+        <section class="final-cta reveal">
+            <p class="eyebrow">READY?</p>
+
+            <h2>
+                START
+                <span>COUNTING.</span>
+            </h2>
+
+            <a
+                class="primary-button"
+                href="https://stopwatch.atpgamestudio.com.ng"
+                target="_blank"
+                rel="noopener"
+            >
+                OPEN STOPWATCH
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Stopwatch by
+            <a href="../../index.html">ATP Game Studio</a>
+        </p>
+
+        <span>© <span id="year"></span> ATP Game Studio</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

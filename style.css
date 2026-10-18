@@ -1,8 +1,8 @@
 /* =========================================================
-ATP GAME STUDIO
-Homepage stylesheet
+ATP GAME STUDIO — HOMEPAGE STYLESHEET
 Fonts: Orbitron + Space Grotesk
 Theme: Dark futuristic / cyan-blue-purple
+Responsive layouts: Desktop/Landscape + Mobile/Portrait
 ========================================================= */
 
 /* =========================================================
@@ -32,24 +32,24 @@ Theme: Dark futuristic / cyan-blue-purple
 --radius-md: 18px;
 --radius-lg: 26px;
 
---shadow-card:
-    0 16px 45px rgba(0, 0, 0, 0.22);
+--shadow-card: 0 16px 45px rgba(0, 0, 0, 0.22);
 
---gradient:
-    linear-gradient(
-        110deg,
-        var(--cyan),
-        var(--blue),
-        var(--purple)
-    );
+--gradient: linear-gradient(
+    110deg,
+    var(--cyan),
+    var(--blue),
+    var(--purple)
+);
 
---transition:
-    180ms ease;
+--transition: 180ms ease;
 
 }
 
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   }
@@ -61,26 +61,26 @@ scroll-padding-top: 100px;
 
 body {
 min-width: 320px;
+overflow-x: hidden;
+
 background:
-radial-gradient(
-ellipse at 10% 5%,
-rgba(60, 99, 255, 0.09),
-transparent 34%
-),
-radial-gradient(
-ellipse at 90% 35%,
-rgba(164, 77, 255, 0.07),
-transparent 32%
-),
-var(--bg);
+    radial-gradient(
+        ellipse at 10% 5%,
+        rgba(60, 99, 255, 0.09),
+        transparent 34%
+    ),
+    radial-gradient(
+        ellipse at 90% 35%,
+        rgba(164, 77, 255, 0.07),
+        transparent 32%
+    ),
+    var(--bg);
 
 color: var(--text);
 
 font-family: "Space Grotesk", sans-serif;
 font-size: 16px;
 line-height: 1.7;
-
-overflow-x: hidden;
 
 -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
@@ -90,7 +90,6 @@ text-rendering: optimizeLegibility;
 body::before {
 position: fixed;
 inset: 0;
-
 z-index: -1;
 
 background-image:
@@ -116,25 +115,21 @@ display: block;
 max-width: 100%;
 }
 
-button,
-input,
-textarea,
-select {
+button, input, textarea, select {
 font: inherit;
 }
 
-button,
-a {
+button, a {
 -webkit-tap-highlight-color: transparent;
+}
+
+button {
+color: inherit;
 }
 
 a {
 color: inherit;
 text-decoration: none;
-}
-
-button {
-color: inherit;
 }
 
 button:focus-visible,
@@ -145,7 +140,7 @@ outline-offset: 5px;
 
 ::selection {
 background: rgba(32, 217, 255, 0.28);
-color: #ffffff;
+color: #fff;
 }
 
 /* =========================================================
@@ -153,13 +148,8 @@ color: #ffffff;
 ========================================================= */
 
 .container {
-width: min(
-var(--max),
-calc(100% - 48px)
-);
-
+width: min(var(--max), calc(100% - 48px));
 margin-inline: auto;
-
 }
 
 .section {
@@ -169,12 +159,9 @@ padding-block: 100px;
 
 .gradient {
 background: var(--gradient);
-
--webkit-background-clip: text;
 background-clip: text;
-
+-webkit-background-clip: text;
 color: transparent;
-
 }
 
 .kicker {
@@ -189,7 +176,6 @@ color: var(--cyan);
 font-family: "Orbitron", sans-serif;
 font-size: 0.7rem;
 font-weight: 700;
-
 letter-spacing: 0.16em;
 text-transform: uppercase;
 
@@ -198,6 +184,7 @@ text-transform: uppercase;
 .kicker::before {
 width: 24px;
 height: 2px;
+flex-shrink: 0;
 
 background: var(--gradient);
 
@@ -224,6 +211,7 @@ max-width: 680px;
 margin-top: 20px;
 
 color: var(--muted);
+
 font-size: 1rem;
 line-height: 1.9;
 
@@ -251,9 +239,9 @@ backdrop-filter: blur(18px);
 display: flex;
 align-items: center;
 justify-content: space-between;
+gap: 28px;
 
 min-height: 82px;
-gap: 28px;
 
 }
 
@@ -270,7 +258,6 @@ min-width: 0;
 .brand-logo {
 width: 46px;
 height: 46px;
-
 flex-shrink: 0;
 
 object-fit: contain;
@@ -291,7 +278,6 @@ color: var(--text);
 font-family: "Orbitron", sans-serif;
 font-size: 1.12rem;
 font-weight: 800;
-
 letter-spacing: 0.12em;
 
 }
@@ -304,7 +290,6 @@ color: var(--muted);
 font-family: "Orbitron", sans-serif;
 font-size: 0.55rem;
 font-weight: 600;
-
 letter-spacing: 0.15em;
 
 }
@@ -326,8 +311,7 @@ color: var(--muted);
 font-size: 0.9rem;
 font-weight: 600;
 
-transition:
-    color var(--transition);
+transition: color var(--transition);
 
 }
 
@@ -344,8 +328,7 @@ background: var(--gradient);
 transform: scaleX(0);
 transform-origin: left;
 
-transition:
-    transform var(--transition);
+transition: transform var(--transition);
 
 content: "";
 
@@ -363,19 +346,19 @@ transform: scaleX(1);
 
 .menu-btn {
 display: none;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
 
 width: 44px;
 height: 44px;
 
-align-items: center;
-justify-content: center;
-
 border: 1px solid var(--line);
-border-radius: 12px;
+border-radius: var(--radius-sm);
 
 background: var(--panel);
-
 color: var(--cyan);
+
 font-size: 1.5rem;
 
 cursor: pointer;
@@ -405,12 +388,11 @@ min-height: 50px;
 padding: 13px 23px;
 
 border: 1px solid transparent;
-border-radius: 12px;
+border-radius: var(--radius-sm);
 
 font-size: 0.9rem;
 font-weight: 700;
 line-height: 1.4;
-
 text-align: center;
 
 cursor: pointer;
@@ -432,23 +414,20 @@ border-color: rgba(32, 217, 255, 0.4);
 
 background: var(--gradient);
 
-box-shadow:
-    0 8px 28px rgba(60, 99, 255, 0.2);
+box-shadow: 0 8px 28px rgba(60, 99, 255, 0.2);
 
-color: #ffffff;
+color: #fff;
 
 }
 
 .btn-primary:hover {
-box-shadow:
-0 12px 34px rgba(60, 99, 255, 0.32);
+box-shadow: 0 12px 34px rgba(60, 99, 255, 0.32);
 }
 
 .btn-secondary {
 border-color: var(--line);
 
 background: rgba(12, 17, 39, 0.7);
-
 color: var(--text);
 
 }
@@ -476,10 +455,8 @@ overflow: hidden;
 .hero-grid {
 display: grid;
 grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
-
 align-items: center;
 gap: 48px;
-
 }
 
 .hero-content {
@@ -499,13 +476,11 @@ border: 1px solid rgba(32, 217, 255, 0.2);
 border-radius: 999px;
 
 background: rgba(32, 217, 255, 0.055);
-
 color: var(--cyan);
 
 font-family: "Orbitron", sans-serif;
 font-size: 0.64rem;
 font-weight: 700;
-
 letter-spacing: 0.08em;
 
 }
@@ -513,13 +488,12 @@ letter-spacing: 0.08em;
 .eyebrow::before {
 width: 7px;
 height: 7px;
+flex-shrink: 0;
 
 border-radius: 50%;
 
 background: var(--cyan);
-
-box-shadow:
-    0 0 12px rgba(32, 217, 255, 0.8);
+box-shadow: 0 0 12px rgba(32, 217, 255, 0.8);
 
 content: "";
 
@@ -531,7 +505,6 @@ max-width: 760px;
 font-family: "Orbitron", sans-serif;
 font-size: clamp(2.35rem, 5.3vw, 4.35rem);
 font-weight: 800;
-
 line-height: 1.16;
 letter-spacing: -0.055em;
 
@@ -582,6 +555,7 @@ gap: 8px;
 .hero-meta span::before {
 width: 5px;
 height: 5px;
+flex-shrink: 0;
 
 border-radius: 50%;
 
@@ -592,334 +566,240 @@ content: "";
 }
 
 /* =========================================================
-6. HERO VISUAL
-========================================================= */
-
-/* =========================================================
-   HERO VISUAL — TRANSPARENT ATP LOGO WITH TWO ELLIPSES
+6. HERO VISUAL — LOGO & ELLIPTICAL ORBITS
 ========================================================= */
 
 .hero-visual {
-    position: relative;
-    
-    display: grid;
-    place-items: center;
-    
-    min-width: 0;
-    min-height: 420px;
-    
-    isolation: isolate;
-}
+position: relative;
 
-/* Both elliptical outlines */
+display: grid;
+place-items: center;
+
+min-width: 0;
+min-height: 420px;
+
+isolation: isolate;
+
+}
 
 .logo-orbit {
-    position: absolute;
-    
-    top: 50%;
-    left: 50%;
-    
-    width: 340px;
-    height: 220px;
-    
-    border: 1px solid rgba(32, 217, 255, 0.45);
-    border-radius: 50%;
-    
-    pointer-events: none;
-}
+position: absolute;
+top: 50%;
+left: 50%;
 
-/* First ellipse */
+width: 340px;
+height: 220px;
+
+border: 1px solid rgba(32, 217, 255, 0.45);
+border-radius: 50%;
+
+pointer-events: none;
+
+}
 
 .logo-orbit-one {
-    transform: translate(-50%, -50%) rotate(-35deg);
+transform: translate(-50%, -50%) rotate(-35deg);
 }
-
-/* Second ellipse */
 
 .logo-orbit-two {
-    width: 340px;
-    height: 220px;
-    
-    border-color: rgba(164, 77, 255, 0.5);
-    
-    transform: translate(-50%, -50%) rotate(35deg);
-}
+width: 340px;
+height: 220px;
 
-/* Full transparent logo */
+border-color: rgba(164, 77, 255, 0.5);
+
+transform: translate(-50%, -50%) rotate(35deg);
+
+}
 
 .hero-logo {
-    position: relative;
-    z-index: 1;
-    
-    display: block;
-    
-    width: 240px;
-    height: 240px;
-    
-    max-width: 75%;
-    
-    object-fit: contain;
-    object-position: center;
-    
-    filter: none;
-}
+position: relative;
+z-index: 1;
 
+display: block;
 
-/* =========================================================
-   HERO VISUAL — TABLET
-========================================================= */
+width: 240px;
+height: 240px;
+max-width: 75%;
 
-@media (max-width: 1024px) {
-    .hero-visual {
-        min-height: 350px;
-    }
-    
-    .logo-orbit-one,
-    .logo-orbit-two {
-        width: 290px;
-        height: 190px;
-    }
-    
-    .hero-logo {
-        width: 210px;
-        height: 210px;
-    }
-}
-
-
-/* =========================================================
-   HERO VISUAL — MOBILE
-========================================================= */
-
-@media (max-width: 760px) {
-    .hero-visual {
-        min-height: 340px;
-    }
-    
-    .logo-orbit-one,
-    .logo-orbit-two {
-        width: 280px;
-        height: 180px;
-    }
-    
-    .hero-logo {
-        width: 210px;
-        height: 210px;
-    }
-}
-
-
-/* =========================================================
-   HERO VISUAL — SMALL MOBILE
-========================================================= */
-
-@media (max-width: 420px) {
-    .hero-visual {
-        min-height: 290px;
-    }
-    
-    .logo-orbit-one,
-    .logo-orbit-two {
-        width: 235px;
-        height: 155px;
-    }
-    
-    .hero-logo {
-        width: 190px;
-        height: 190px;
-    }
-}
-
-
-.hero-core > span {
-margin-top: 10px;
-
-color: var(--text);
-
-font-family: "Orbitron", sans-serif;
-font-size: 1.45rem;
-font-weight: 800;
-
-letter-spacing: 0.2em;
-
-}
-
-.hero-core > strong {
-margin-top: 4px;
-
-color: var(--cyan);
-
-font-family: "Orbitron", sans-serif;
-font-size: 0.58rem;
-
-letter-spacing: 0.16em;
-
-}
-
-.floating-label {
-position: absolute;
-
-padding: 9px 13px;
-
-border: 1px solid var(--line);
-border-radius: 9px;
-
-background: rgba(12, 17, 39, 0.9);
-
-box-shadow:
-    0 10px 28px rgba(0, 0, 0, 0.18);
-
-color: var(--text);
-
-font-family: "Orbitron", sans-serif;
-font-size: 0.59rem;
-font-weight: 700;
-
-letter-spacing: 0.09em;
-
-}
-
-.floating-label-one {
-top: 15%;
-left: 3%;
-
-border-color: rgba(32, 217, 255, 0.24);
-
-transform: rotate(-8deg);
-
-}
-
-.floating-label-two {
-top: 28%;
-right: 0;
-
-border-color: rgba(164, 77, 255, 0.3);
-
-transform: rotate(7deg);
-
-}
-
-.floating-label-three {
-right: 8%;
-bottom: 13%;
-
-border-color: rgba(60, 99, 255, 0.3);
-
-transform: rotate(-5deg);
+object-fit: contain;
+object-position: center;
 
 }
 
 /* =========================================================
-7. ABOUT SECTION
+7. ABOUT SECTION — LARGE FEATURED IMAGES
 ========================================================= */
 
 .about-section {
-border-top: 1px solid rgba(110, 150, 255, 0.08);
-border-bottom: 1px solid rgba(110, 150, 255, 0.08);
+border-block: 1px solid rgba(110, 150, 255, 0.08);
 
-background:
-    linear-gradient(
-        180deg,
-        rgba(8, 11, 29, 0.65),
-        rgba(8, 11, 29, 0.25)
-    );
+background: linear-gradient(
+    180deg,
+    rgba(8, 11, 29, 0.65),
+    rgba(8, 11, 29, 0.25)
+);
 
 }
+
+/* Three equal columns on desktop */
 
 .about-grid {
 display: grid;
 grid-template-columns: repeat(3, minmax(0, 1fr));
-gap: 22px;
+align-items: stretch;
+gap: 28px;
 }
+
+/* Feature cards */
 
 .about-card {
 position: relative;
 
-padding: 28px;
+display: flex;
+flex-direction: column;
+
+min-width: 0;
+padding: 0 0 30px;
 
 border: 1px solid var(--line);
-border-radius: var(--radius-md);
+border-radius: var(--radius-lg);
 
-background:
-    linear-gradient(
-        145deg,
-        rgba(16, 23, 53, 0.7),
-        rgba(12, 17, 39, 0.7)
-    );
+background: linear-gradient(
+    145deg,
+    rgba(16, 23, 53, 0.82),
+    rgba(12, 17, 39, 0.9)
+);
+
+box-shadow: var(--shadow-card);
+
+overflow: hidden;
 
 transition:
     transform var(--transition),
     border-color var(--transition),
-    background var(--transition);
+    background var(--transition),
+    box-shadow var(--transition);
 
 }
 
 .about-card:hover {
-border-color: rgba(32, 217, 255, 0.32);
+border-color: rgba(32, 217, 255, 0.38);
 
-background:
-    linear-gradient(
-        145deg,
-        rgba(16, 23, 53, 0.95),
-        rgba(12, 17, 39, 0.9)
-    );
+background: linear-gradient(
+    145deg,
+    rgba(16, 23, 53, 0.98),
+    rgba(12, 17, 39, 0.98)
+);
 
-transform: translateY(-5px);
+box-shadow: 0 22px 50px rgba(0, 0, 0, 0.3);
+
+transform: translateY(-7px);
 
 }
 
+/*
+Large image display area.
+This replaces the original 48 × 48 px icon box.
+*/
+
 .about-card-icon {
+position: relative;
+
 display: grid;
 place-items: center;
 
-width: 48px;
-height: 48px;
+width: 100%;
+height: 320px;
+flex-shrink: 0;
 
-margin-bottom: 22px;
+margin-bottom: 28px;
+padding: 16px;
 
-border: 1px solid rgba(32, 217, 255, 0.2);
-border-radius: 14px;
+border: 0;
+border-radius: 0;
 
-background: rgba(32, 217, 255, 0.07);
+background:
+    radial-gradient(
+        ellipse at 50% 45%,
+        rgba(32, 217, 255, 0.12),
+        transparent 72%
+    ),
+    rgba(5, 7, 19, 0.35);
 
-color: var(--cyan);
-
-font-family: "Orbitron", sans-serif;
-font-size: 1.2rem;
-font-weight: 700;
+overflow: hidden;
 
 }
 
+/* Different atmospheric backgrounds for the illustrations */
+
 .about-card:nth-child(2) .about-card-icon {
-border-color: rgba(60, 99, 255, 0.28);
-
-background: rgba(60, 99, 255, 0.08);
-
-color: #8196ff;
-
+background:
+radial-gradient(
+ellipse at 50% 45%,
+rgba(60, 99, 255, 0.18),
+transparent 72%
+),
+rgba(5, 7, 19, 0.35);
 }
 
 .about-card:nth-child(3) .about-card-icon {
-border-color: rgba(164, 77, 255, 0.28);
+background:
+radial-gradient(
+ellipse at 50% 45%,
+rgba(164, 77, 255, 0.17),
+transparent 72%
+),
+rgba(5, 7, 19, 0.35);
+}
 
-background: rgba(164, 77, 255, 0.08);
+/* The actual illustrations */
 
-color: #c18aff;
+.about-card-icon img {
+display: block;
+
+width: 100%;
+height: 100%;
+max-width: none;
+
+object-fit: contain;
+object-position: center;
+
+filter: drop-shadow(
+    0 12px 22px rgba(0, 0, 0, 0.25)
+);
+
+transition:
+    transform 300ms ease,
+    filter 300ms ease;
 
 }
 
+.about-card:hover .about-card-icon img {
+transform: scale(1.06);
+
+filter: drop-shadow(
+    0 15px 28px rgba(32, 217, 255, 0.15)
+);
+
+}
+
+/* Card headings */
+
 .about-card h3 {
-margin-bottom: 12px;
+margin: 0 26px 12px;
 
 font-family: "Orbitron", sans-serif;
-font-size: 1rem;
+font-size: 1.05rem;
 font-weight: 600;
-
 line-height: 1.5;
 
 }
 
+/* Card descriptions */
+
 .about-card p {
+margin-inline: 26px;
+
 color: var(--muted);
 
 font-size: 0.91rem;
@@ -938,10 +818,8 @@ overflow: hidden;
 .products-grid {
 display: grid;
 grid-template-columns: repeat(4, minmax(0, 1fr));
-gap: 20px;
-
 align-items: stretch;
-
+gap: 20px;
 }
 
 .product-card {
@@ -953,12 +831,11 @@ min-height: 100%;
 border: 1px solid var(--line);
 border-radius: var(--radius-md);
 
-background:
-    linear-gradient(
-        145deg,
-        rgba(16, 23, 53, 0.82),
-        rgba(12, 17, 39, 0.88)
-    );
+background: linear-gradient(
+    145deg,
+    rgba(16, 23, 53, 0.82),
+    rgba(12, 17, 39, 0.88)
+);
 
 box-shadow: var(--shadow-card);
 
@@ -983,7 +860,6 @@ height: 2px;
 background: var(--gradient);
 
 opacity: 0;
-
 transform: scaleX(0.5);
 
 transition:
@@ -991,7 +867,6 @@ transition:
     transform var(--transition);
 
 content: "";
-
 pointer-events: none;
 
 }
@@ -999,12 +874,11 @@ pointer-events: none;
 .product-card:hover {
 border-color: rgba(32, 217, 255, 0.36);
 
-background:
-    linear-gradient(
-        145deg,
-        rgba(16, 23, 53, 0.98),
-        rgba(12, 17, 39, 0.98)
-    );
+background: linear-gradient(
+    145deg,
+    rgba(16, 23, 53, 0.98),
+    rgba(12, 17, 39, 0.98)
+);
 
 box-shadow:
     0 20px 48px rgba(0, 0, 0, 0.3),
@@ -1019,10 +893,7 @@ opacity: 1;
 transform: scaleX(1);
 }
 
-/*
-The single link wraps the entire card content.
-There are no nested links inside product-card-link.
-*/
+/* One link wraps the entire product card */
 
 .product-card-link {
 position: relative;
@@ -1033,7 +904,6 @@ flex-direction: column;
 
 width: 100%;
 height: 100%;
-min-height: 100%;
 
 padding: 24px;
 
@@ -1052,22 +922,25 @@ text-decoration: none;
 }
 
 .product-card-link:focus-visible {
+border-radius: var(--radius-md);
+
 outline: 2px solid var(--cyan);
 outline-offset: -5px;
 
-border-radius: var(--radius-md);
-
 }
+
+/* Product logo frame */
 
 .product-logo-frame {
 display: grid;
 place-items: center;
 
 width: 100%;
-min-height: 132px;
+height: 132px;
+flex-shrink: 0;
 
 margin-bottom: 23px;
-padding: 15px;
+padding: 6px;
 
 border: 1px solid rgba(110, 150, 255, 0.12);
 border-radius: 15px;
@@ -1082,11 +955,18 @@ background:
 
 }
 
+/* Product logos */
+
 .product-logo {
-width: 88px;
-height: 88px;
+display: block;
+
+width: 100%;
+height: 100%;
+min-width: 0;
+min-height: 0;
 
 object-fit: contain;
+object-position: center;
 
 transition:
     transform 220ms ease,
@@ -1095,17 +975,18 @@ transition:
 }
 
 .product-card:hover .product-logo {
-transform: scale(1.07);
+transform: scale(1.04);
 
-filter:
-    drop-shadow(0 0 13px rgba(32, 217, 255, 0.13));
+filter: drop-shadow(
+    0 0 13px rgba(32, 217, 255, 0.13)
+);
 
 }
 
 .product-content {
 display: flex;
-flex-direction: column;
 flex: 1;
+flex-direction: column;
 }
 
 .product-type {
@@ -1119,13 +1000,11 @@ border: 1px solid rgba(32, 217, 255, 0.18);
 border-radius: 999px;
 
 background: rgba(32, 217, 255, 0.055);
-
 color: var(--cyan);
 
 font-family: "Orbitron", sans-serif;
 font-size: 0.56rem;
 font-weight: 700;
-
 letter-spacing: 0.06em;
 line-height: 1.5;
 text-transform: uppercase;
@@ -1136,7 +1015,6 @@ text-transform: uppercase;
 border-color: rgba(60, 99, 255, 0.25);
 
 background: rgba(60, 99, 255, 0.08);
-
 color: #9aabff;
 
 }
@@ -1145,7 +1023,6 @@ color: #9aabff;
 border-color: rgba(164, 77, 255, 0.25);
 
 background: rgba(164, 77, 255, 0.08);
-
 color: #c69aff;
 
 }
@@ -1158,12 +1035,11 @@ color: var(--text);
 font-family: "Orbitron", sans-serif;
 font-size: 0.96rem;
 font-weight: 700;
-
 line-height: 1.5;
+
 overflow-wrap: anywhere;
 
-transition:
-    color var(--transition);
+transition: color var(--transition);
 
 }
 
@@ -1186,12 +1062,11 @@ line-height: 1.8;
 .product-featured {
 border-color: rgba(32, 217, 255, 0.28);
 
-background:
-    linear-gradient(
-        145deg,
-        rgba(17, 30, 63, 0.94),
-        rgba(12, 17, 39, 0.94)
-    );
+background: linear-gradient(
+    145deg,
+    rgba(17, 30, 63, 0.94),
+    rgba(12, 17, 39, 0.94)
+);
 
 }
 
@@ -1308,12 +1183,11 @@ right: -35px;
 width: 330px;
 height: 330px;
 
-background:
-    radial-gradient(
-        circle,
-        rgba(60, 99, 255, 0.12),
-        transparent 70%
-    );
+background: radial-gradient(
+    circle,
+    rgba(60, 99, 255, 0.12),
+    transparent 70%
+);
 
 }
 
@@ -1346,12 +1220,11 @@ border-color: rgba(164, 77, 255, 0.2);
 .site-footer {
 border-top: 1px solid rgba(110, 150, 255, 0.15);
 
-background:
-    linear-gradient(
-        180deg,
-        rgba(8, 11, 29, 0.8),
-        rgba(5, 7, 19, 0.98)
-    );
+background: linear-gradient(
+    180deg,
+    rgba(8, 11, 29, 0.8),
+    rgba(5, 7, 19, 0.98)
+);
 
 }
 
@@ -1360,8 +1233,7 @@ display: grid;
 grid-template-columns: 1.5fr 0.8fr 1.1fr 0.7fr;
 gap: 42px;
 
-padding-top: 64px;
-padding-bottom: 52px;
+padding-block: 64px 52px;
 
 }
 
@@ -1394,7 +1266,6 @@ color: var(--text);
 font-family: "Orbitron", sans-serif;
 font-size: 0.76rem;
 font-weight: 700;
-
 letter-spacing: 0.08em;
 text-transform: uppercase;
 
@@ -1420,9 +1291,7 @@ transition:
 
 .footer-links a:hover {
 color: var(--cyan);
-
 text-decoration-color: var(--cyan);
-
 }
 
 .footer-bottom {
@@ -1431,8 +1300,7 @@ align-items: center;
 justify-content: space-between;
 gap: 20px;
 
-padding-top: 22px;
-padding-bottom: 25px;
+padding-block: 22px 25px;
 
 border-top: 1px solid rgba(110, 150, 255, 0.12);
 
@@ -1447,76 +1315,23 @@ line-height: 1.7;
 }
 
 /* =========================================================
-11. RESPONSIVE — TABLETS
+11. RESPONSIVE LAYOUT — TABLETS & PORTRAIT
 ========================================================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 :root {
---max: 900px;
+--max: 760px;
 }
 
 .section {
     padding-block: 82px;
 }
 
-.hero {
-    min-height: auto;
-    padding-block: 80px 90px;
-}
-
-.hero-grid {
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 0.85fr);
-    gap: 24px;
-}
-
-.hero-visual {
-    min-height: 350px;
-}
-
-.hero-core {
-    width: 200px;
-    min-height: 220px;
-}
-
-.hero-logo {
-    width: 100px;
-    height: 100px;
-}
-
-.products-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.footer-main {
-    grid-template-columns: 1.3fr 1fr 1fr;
-    gap: 36px;
-}
-
-.footer-brand {
-    grid-column: 1 / -1;
-
-    max-width: 440px;
-}
-
-}
-
-/* =========================================================
-12. RESPONSIVE — MOBILE NAVIGATION
-========================================================= */
-
-@media (max-width: 760px) {
-.container {
-width: min(
-var(--max),
-calc(100% - 36px)
-);
-}
+/* Header */
 
 .header-inner {
-    position: relative;
-
-    min-height: 74px;
     gap: 16px;
+    min-height: 74px;
 }
 
 .brand-logo {
@@ -1526,7 +1341,6 @@ calc(100% - 36px)
 
 .menu-btn {
     display: inline-flex;
-    flex-shrink: 0;
 }
 
 .nav-links {
@@ -1548,8 +1362,7 @@ calc(100% - 36px)
 
     background: rgba(8, 11, 29, 0.98);
 
-    box-shadow:
-        0 20px 35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links.active {
@@ -1558,7 +1371,6 @@ calc(100% - 36px)
 
 .nav-links a {
     padding: 13px 12px;
-
     border-radius: 8px;
 }
 
@@ -1569,19 +1381,13 @@ calc(100% - 36px)
 .nav-links a:hover,
 .nav-links a[aria-current="page"] {
     background: rgba(32, 217, 255, 0.06);
-
     color: var(--cyan);
 }
 
-.section {
-    padding-block: 72px;
-}
-
-.section-head {
-    margin-bottom: 34px;
-}
+/* Hero */
 
 .hero {
+    min-height: auto;
     padding-block: 68px 75px;
 }
 
@@ -1595,7 +1401,7 @@ calc(100% - 36px)
 }
 
 .hero h1 {
-    font-size: clamp(2.25rem, 8vw, 3.5rem);
+    font-size: clamp(2.25rem, 7vw, 3.5rem);
 }
 
 .hero-content > p {
@@ -1606,39 +1412,45 @@ calc(100% - 36px)
     min-height: 340px;
 }
 
-.hero-orbit-one {
-    width: 310px;
+.logo-orbit-one,
+.logo-orbit-two {
+    width: 280px;
+    height: 180px;
 }
 
-.hero-orbit-two {
-    width: 270px;
+.hero-logo {
+    width: 210px;
+    height: 210px;
 }
 
-.hero-core {
-    width: 205px;
-    min-height: 225px;
-}
-
-.floating-label-one {
-    left: 8%;
-}
-
-.floating-label-two {
-    right: 7%;
-}
-
-.floating-label-three {
-    right: 12%;
-}
+/* About: one large image-led card per row */
 
 .about-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 30px;
 }
 
 .about-card {
-    padding: 25px;
+    padding: 0 0 30px;
 }
+
+.about-card-icon {
+    height: 440px;
+    padding: 24px;
+    margin-bottom: 28px;
+}
+
+.about-card h3 {
+    margin-inline: 28px;
+    font-size: 1.15rem;
+}
+
+.about-card p {
+    margin-inline: 28px;
+    font-size: 0.96rem;
+}
+
+/* Products */
 
 .products-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1650,14 +1462,9 @@ calc(100% - 36px)
 }
 
 .product-logo-frame {
-    min-height: 112px;
+    height: 112px;
     margin-bottom: 18px;
-    padding: 12px;
-}
-
-.product-logo {
-    width: 76px;
-    height: 76px;
+    padding: 5px;
 }
 
 .product-content h3 {
@@ -1667,6 +1474,8 @@ calc(100% - 36px)
 .product-content p {
     font-size: 0.82rem;
 }
+
+/* Contact */
 
 .contact-section {
     padding-top: 10px;
@@ -1690,16 +1499,18 @@ calc(100% - 36px)
     right: -180px;
 }
 
+/* Footer */
+
 .footer-main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 34px 24px;
 
-    padding-top: 48px;
-    padding-bottom: 38px;
+    padding-block: 48px 38px;
 }
 
 .footer-brand {
     grid-column: 1 / -1;
+    max-width: 440px;
 }
 
 .footer-bottom {
@@ -1711,13 +1522,15 @@ calc(100% - 36px)
 }
 
 /* =========================================================
-13. RESPONSIVE — SMALL MOBILE
+12. RESPONSIVE LAYOUT — SMALL PORTRAIT SCREENS
 ========================================================= */
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
 .container {
 width: calc(100% - 30px);
 }
+
+/* Header */
 
 .brand {
     gap: 9px;
@@ -1735,6 +1548,8 @@ width: calc(100% - 30px);
 .brand-text > span {
     font-size: 0.49rem;
 }
+
+/* Hero */
 
 .hero {
     padding-top: 54px;
@@ -1764,57 +1579,50 @@ width: calc(100% - 30px);
 }
 
 .hero-visual {
-    min-height: 300px;
+    min-height: 290px;
 }
 
-.hero-orbit-one {
-    width: 260px;
-}
-
-.hero-orbit-two {
-    width: 225px;
-}
-
-.hero-core {
-    width: 175px;
-    min-height: 195px;
-    padding: 18px;
+.logo-orbit-one,
+.logo-orbit-two {
+    width: 235px;
+    height: 155px;
 }
 
 .hero-logo {
-    width: 86px;
-    height: 86px;
+    width: 190px;
+    height: 190px;
 }
 
-.hero-core > span {
-    font-size: 1.2rem;
-}
-
-.hero-core > strong {
-    font-size: 0.49rem;
-}
-
-.floating-label {
-    padding: 7px 9px;
-    font-size: 0.48rem;
-}
-
-.floating-label-one {
-    left: 0;
-}
-
-.floating-label-two {
-    right: 0;
-}
-
-.floating-label-three {
-    right: 4%;
-}
+/* Section headings */
 
 .section-head h2,
 .contact-content h2 {
     font-size: 1.8rem;
 }
+
+/* About: keep illustrations large on phones */
+
+.about-grid {
+    gap: 24px;
+}
+
+.about-card-icon {
+    height: 340px;
+    padding: 14px;
+    margin-bottom: 24px;
+}
+
+.about-card h3 {
+    margin-inline: 20px;
+    font-size: 1rem;
+}
+
+.about-card p {
+    margin-inline: 20px;
+    font-size: 0.88rem;
+}
+
+/* Products */
 
 .products-grid {
     gap: 12px;
@@ -1825,18 +1633,13 @@ width: calc(100% - 30px);
 }
 
 .product-logo-frame {
-    min-height: 94px;
-    padding: 9px;
-}
-
-.product-logo {
-    width: 64px;
-    height: 64px;
+    height: 94px;
+    padding: 4px;
 }
 
 .product-type {
-    font-size: 0.48rem;
     padding: 4px 7px;
+    font-size: 0.48rem;
 }
 
 .product-content h3 {
@@ -1848,9 +1651,13 @@ width: calc(100% - 30px);
     line-height: 1.7;
 }
 
+/* Contact */
+
 .contact-panel {
     padding: 32px 22px;
 }
+
+/* Footer */
 
 .footer-main {
     gap: 30px 18px;
@@ -1867,7 +1674,7 @@ width: calc(100% - 30px);
 }
 
 /* =========================================================
-14. ACCESSIBILITY — REDUCED MOTION
+13. ACCESSIBILITY — REDUCED MOTION
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
@@ -1875,11 +1682,8 @@ width: calc(100% - 30px);
 *::before,
 *::after {
 scroll-behavior: auto !important;
-
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-
-    transition-duration: 0.01ms !important;
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
 }
-
 }

@@ -1,97 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><!-- ATP Game Studio Main Website -->
 
-    <!-- ATP Game Studio -->
-    <url>
-        <loc>https://atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://atpgamestudio.com.ng/about.html</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/about.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://atpgamestudio.com.ng/projects.html</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/contact.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://atpgamestudio.com.ng/contact.html</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/privacy-policy.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://atpgamestudio.com.ng/privacy-policy.html</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
-
-    <url>
-        <loc>https://atpgamestudio.com.ng/terms-and-conditions.html</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/terms-and-conditions.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
 
-    <!-- Products -->
-    <url>
-        <loc>https://solitaire.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<!-- Products -->
 
-    <url>
-        <loc>https://chain-rxn.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://suits-up.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/image-resizer/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://tick-task.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/ping-pong/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://hands-of-time.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/scientific-calculator/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://image-resizer.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/stopwatch/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://tfx.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/tfx/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://knovilla.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/tick-task/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://scientific-calculator.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/vidlite/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
-    <url>
-        <loc>https://stopwatch.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
 
-    <url>
-        <loc>https://ping-pong.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<!-- Knovilla Blog -->
 
-    <url>
-        <loc>https://vidlite.atpgamestudio.com.ng/</loc>
-        <lastmod>2026-10-03</lastmod>
-    </url>
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/index.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/getting-started.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/local-pass-and-play.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/local-wifi-multiplayer.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/online-multiplayer.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/profile-and-progress.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/review-multiplayer-questions.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/teacher-theory-grading.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
+
+<url>
+    <loc>https://atpgamestudio.com.ng/products/knovilla/blog/theory-assessment.html</loc>
+    <lastmod>2026-10-19</lastmod>
+</url>
 
 </urlset>
